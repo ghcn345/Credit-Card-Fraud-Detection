@@ -19,11 +19,11 @@ Given the class imbalance ratio, we recommend measuring the accuracy using the A
 ## Exploratory Data Analysis (EDA)
 
 Statistics for all of the variables
-![groupby](/images/.jpg)
+![groupby](/images/overall.jpg)
 
 
 Relationship between exploratory variables and target variable
-![overall](/images/.jpg)
+![overall](/images/class.jpg)
 
 
 
