@@ -32,13 +32,18 @@ Relationship between exploratory variables and target variable
 To recognize fraud case in credit card transactions from honestly recording 'yes' (1) or 'no' (0) to this question, a randomized procedure is initiated as follows:
 
 1. We set up a threshold (m) first. If a random number < m, credit card transactions have to be recorded correctly.
-2. If a random number > m, we set another random number to compare with the threshold (0.5) again, i.e. 'yes' (1) for < m and 'no' (0) for > m.
+2. If a random number > m, we set another random number to compare with another threshold (n) again, i.e. 'yes' (1) for < n and 'no' (0) for > n.
 
 The true ratio for the case of the fraudulent credit card transaction is p_true, and the observed case of the fraudulent credit card transaction is p_noise. Their mathematical relationship is 
 
-![Figure](/images/eqn.jpg)
+![Figure](/images/eqn1.jpg)
 
-The noise (m) can be added by taking numbers from Laplacian, Gaussian or exponential distribution.
+when n = 0.5, the expressions can be simplified as
+
+![Figure](/images/eqn2.jpg)
+
+The noise (m, n) can be added by taking numbers from Laplacian, Gaussian or exponential distribution.
+
 
 
 ## Feature Engineering & Modeling Evaluation
