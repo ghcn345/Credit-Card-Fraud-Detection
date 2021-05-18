@@ -1,5 +1,5 @@
 <p>
-<img src="images/cc.jpg" width="900" height="600">
+<img src="images/cc.jpg" width="900" height="506">
 </p>
 
 # Credit Card Default Prediction
@@ -31,15 +31,14 @@ Relationship between exploratory variables and target variable
 
 By data preprocessing, domain-motivated features are developed. Positvely contributed features are tested to evaluate their performance in modeling. New features and interaction features such as delinquency, probability of default and exposure at default are studied.
 
-![Figure](/images/.jpg)
+![Figure](/images/roc_input.jpg)
 
-![Figure](/images/.jpg)
 
 
 ## Modeling Evaluation
-The metric of accuracy score, F1 score, classification_report, confusion_matrix, roc curve and auc score are all evaluated and provided.
 
-![Figure](/images/.jpg)
+
+![Figure](/images/roc_output.jpg)
 
 
 
