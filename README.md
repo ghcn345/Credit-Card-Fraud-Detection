@@ -37,8 +37,8 @@ To protect the patients from honestly answering 'yes' or 'no' to this question r
 The true ratio of the patients the cancer is p_true, and the observed ratio with noise is p_noise. Their mathematical relationship is 
 
 ```math
-$p_{noise} = m*p_{true} + 0.5*(1-m)$
-$p_{true} = \frac{p_{noise}}{m} - \frac{0.5*(1-m)}{m}$
+$$p_{noise} = m*p_{true} + 0.5*(1-m)$$
+$$p_{true} = \frac{p_{noise}}{m} - \frac{0.5*(1-m)}{m}$$
 ```
 
 The noise (m) can be added by taking numbers from Laplacian or Gaussian distribution.
