@@ -27,16 +27,27 @@ Relationship between exploratory variables and target variable
 
 
 
-## Feature Engineering
+## Differential Privacy
 
-By data preprocessing, domain-motivated features are developed. Positvely contributed features are tested to evaluate their performance in modeling. New features and interaction features such as delinquency, probability of default and exposure at default are studied.
+To protect the patients from honestly answering 'yes' or 'no' to this question related to cancer, a randomized procedure is initiated as follows:
+
+1. We set up a threshold (m) first. If a random number < m, petients have to answer honestly.
+2. If a random number > m, we set another random number to compare with the threshold again, i.e. yes for < m and no for > m.
+
+The true ratio of the patients the cancer is p_true, and the observed ratio with noise is p_noise. Their mathematical relationship is 
+
+$$p_{noise} = m*p_{true} + 0.5*(1-m)$$
+$$p_{true} = \frac{p_{noise}}{m} - \frac{0.5*(1-m)}{m}$$
+
+The noise (m) can be added by taking numbers from Laplacian or Gaussian distribution.
+
+
+
+
+
+## Feature Engineering & Modeling Evaluation
 
 ![Figure](/images/roc_input.jpg)
-
-
-
-## Modeling Evaluation
-
 
 ![Figure](/images/roc_output.jpg)
 
