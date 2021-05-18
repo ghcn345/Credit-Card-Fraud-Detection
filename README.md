@@ -29,19 +29,16 @@ Relationship between exploratory variables and target variable
 
 ## Differential Privacy
 
-To protect the patients from honestly answering 'yes' or 'no' to this question related to cancer, a randomized procedure is initiated as follows:
+To recognize fraud case in credit card transactions from honestly recording 'yes' (1) or 'no' (0) to this question, a randomized procedure is initiated as follows:
 
-1. We set up a threshold (m) first. If a random number < m, petients have to answer honestly.
-2. If a random number > m, we set another random number to compare with the threshold again, i.e. yes for < m and no for > m.
+1. We set up a threshold (m) first. If a random number < m, credit card transactions have to be recorded correctly.
+2. If a random number > m, we set another random number to compare with the threshold (0.5) again, i.e. 'yes' (1) for < m and 'no' (0) for > m.
 
-The true ratio of the patients the cancer is p_true, and the observed ratio with noise is p_noise. Their mathematical relationship is 
+The true ratio for the case of the fraudulent credit card transaction is p_true, and the observed case of the fraudulent credit card transaction is p_noise. Their mathematical relationship is 
 
 ![Figure](/images/eqn.jpg)
 
-The noise (m) can be added by taking numbers from Laplacian or Gaussian distribution.
-
-
-
+The noise (m) can be added by taking numbers from Laplacian, Gaussian or exponential distribution.
 
 
 ## Feature Engineering & Modeling Evaluation
