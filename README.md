@@ -1,4 +1,6 @@
-![CC](/images/cc.jpg)
+<p>
+<img src="images/cc.jpg" width="900" height="600">
+</p>
 
 # Credit Card Default Prediction
 
